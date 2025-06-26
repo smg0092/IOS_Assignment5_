@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="peT-1C-j1d">
+                                <rect key="frame" x="20" y="138" width="353" height="626"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="outcome Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOo-6K-EeH">
+                                        <rect key="frame" x="10" y="0.0" width="333" height="141.66666666666666"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderwidth">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color">
+                                                <string key="keyPath">layer.borderColor	</string>
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRq-Hu-5LC">
+                                        <rect key="frame" x="10" y="161.66666666666669" width="333" height="141.33333333333331"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="ChoiceButton1">
+                                            <fontDescription key="titleFontDescription" name="CourierNewPSMT" family="Courier New" pointSize="31"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="choice1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Y8-C5-HKw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ld5-Dv-hrX">
+                                        <rect key="frame" x="10" y="323" width="333" height="141.66666666666663"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="ChoiceButton2">
+                                            <fontDescription key="titleFontDescription" name="CourierNewPSMT" family="Courier New" pointSize="31"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="choice2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B3D-Yd-S5x"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="endLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJ3-M7-Lv8">
+                                        <rect key="frame" x="10" y="484.66666666666657" width="333" height="141.33333333333331"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="GJ3-M7-Lv8" firstAttribute="top" secondItem="Ld5-Dv-hrX" secondAttribute="bottom" constant="10" id="8b6-Fs-FZX"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Ld5-Dv-hrX" secondAttribute="trailing" constant="10" id="9uh-cl-Ye4"/>
+                                    <constraint firstItem="jRq-Hu-5LC" firstAttribute="top" secondItem="tOo-6K-EeH" secondAttribute="bottom" constant="10" id="CX4-zV-UlO"/>
+                                    <constraint firstItem="jRq-Hu-5LC" firstAttribute="top" secondItem="tOo-6K-EeH" secondAttribute="bottom" constant="10" id="DLp-TN-sqe"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="jRq-Hu-5LC" secondAttribute="trailing" constant="10" id="DVK-Np-bbd"/>
+                                    <constraint firstItem="Ld5-Dv-hrX" firstAttribute="top" secondItem="jRq-Hu-5LC" secondAttribute="bottom" constant="10" id="Jmv-J4-2Pj"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="GJ3-M7-Lv8" secondAttribute="trailing" constant="10" id="Khf-7I-quY"/>
+                                    <constraint firstItem="tOo-6K-EeH" firstAttribute="top" secondItem="peT-1C-j1d" secondAttribute="top" constant="10" id="T5O-pf-7sB"/>
+                                    <constraint firstItem="tOo-6K-EeH" firstAttribute="leading" secondItem="peT-1C-j1d" secondAttribute="leading" constant="10" id="Tky-uN-Nor"/>
+                                    <constraint firstItem="GJ3-M7-Lv8" firstAttribute="leading" secondItem="peT-1C-j1d" secondAttribute="leadingMargin" constant="10" id="UWa-Hy-34s"/>
+                                    <constraint firstItem="jRq-Hu-5LC" firstAttribute="leading" secondItem="peT-1C-j1d" secondAttribute="leadingMargin" constant="10" id="gW7-fx-uaS"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="GJ3-M7-Lv8" secondAttribute="bottom" constant="10" id="i2b-2c-B9K"/>
+                                    <constraint firstAttribute="trailing" secondItem="tOo-6K-EeH" secondAttribute="trailing" constant="10" id="ihm-lp-nNO"/>
+                                    <constraint firstItem="Ld5-Dv-hrX" firstAttribute="leading" secondItem="peT-1C-j1d" secondAttribute="leadingMargin" constant="10" id="jEk-bZ-i93"/>
+                                    <constraint firstItem="Ld5-Dv-hrX" firstAttribute="top" secondItem="jRq-Hu-5LC" secondAttribute="bottom" constant="10" id="u0X-g1-Ygt"/>
+                                    <constraint firstItem="GJ3-M7-Lv8" firstAttribute="top" secondItem="Ld5-Dv-hrX" secondAttribute="bottom" constant="10" id="uw3-1H-GrF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="peT-1C-j1d" secondAttribute="trailing" constant="20" id="Pp6-bg-PO9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="peT-1C-j1d" secondAttribute="bottom" constant="20" id="k2m-D8-1Rq"/>
+                            <constraint firstItem="peT-1C-j1d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="y2w-xJ-xLU"/>
+                            <constraint firstItem="peT-1C-j1d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="zMe-jQ-TKb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choiceButton1" destination="jRq-Hu-5LC" id="sFs-NZ-ZKF"/>
+                        <outlet property="choiceButton2" destination="Ld5-Dv-hrX" id="7SZ-0D-h5x"/>
+                        <outlet property="endLabel" destination="GJ3-M7-Lv8" id="HNk-Iy-K8r"/>
+                        <outlet property="outcomeLabel" destination="tOo-6K-EeH" id="vti-RO-rQg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
